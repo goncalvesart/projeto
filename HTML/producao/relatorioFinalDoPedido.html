@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/bootstrap.css">
+  <link rel="stylesheet" href="/CSS/relatorioFinal.css">
+  <title>Relatório Final do Pedido</title>
+  
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Relatório Final do Pedido</h1>
+    <form>
+      <div class="form-group">
+        <label for="pedido-id">Número do Pedido:</label>
+        <input type="text" id="pedido-id" class="form-control" readonly>
+      </div>
+      <div class="form-group">
+        <label for="descricao">Descrição do Pedido:</label>
+        <textarea id="descricao" class="form-control" rows="5"></textarea>
+      </div>
+      <h2>Produtos Fabricados</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Cor</th>
+            <th>Tamanho</th>
+            <th>Quantidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input type="text" class="form-control" id="produto-1">
+            </td>
+            <td>
+              <input type="text" class="form-control" id="cor-1">
+            </td>
+            <td>
+              <input type="text" class="form-control" id="tamanho-1">
+            </td>
+            <td>
+              <input type="number" class="form-control" id="quantidade-1">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" class="form-control" id="produto-2">
+            </td>
+            <td>
+              <input type="text" class="form-control" id="cor-2">
+            </td>
+            <td>
+              <input type="text" class="form-control" id="tamanho-2">
+            </td>
+            <td>
+              <input type="number" class="form-control" id="quantidade-2">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" class="form-control" id="produto-1">
+            </td>
+            <td>
+              <input type="text" class="form-control" id="cor-1">
+            </td>
+            <td>
+              <input type="text" class="form-control" id="tamanho-1">
+            </td>
+            <td>
+              <input type="number" class="form-control" id="quantidade-1">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" class="form-control" id="produto-2">
+            </td>
+            <td>
+              <input type="text" class="form-control" id="cor-2">
+            </td>
+            <td>
+              <input type="text" class="form-control" id="tamanho-2">
+            </td>
+            <td>
+              <input type="number" class="form-control" id="quantidade-2">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="submit" class="btn btn-primary btn-lg">Salvar Relatório</button>
+      <button type="button" class="btn btn-primary btn-lg back-button" onclick="history.back()">Voltar</button>
+    </form>
+  </div>
+</body>
+</html>

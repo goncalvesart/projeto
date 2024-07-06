@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/cadastroTelaInicial.css">
+    <title>Cadastro de Funcionário</title>
+     
+    
+</head>
+<body>
+    <h1>Cadastro de Funcionário</h1>
+
+    <form class="formulario" id="register-form">
+        <div class="container-nome">
+            <label for="inputName" class="form-label-nome">Nome </label>
+            <input type="text" class="form-control" id="inputName" placeholder="NOME">
+        </div>
+        <div class="container-email">
+            <label for="inputEmail4" class="form-label-email">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="container-usuario">
+            <label for="inputUsuario" class="form-label-usuario">Usuário</label>
+            <input type="text" class="form-control" id="inputUsuario" placeholder="Usuário">
+        </div>
+        <div class="container-senha">
+            <label for="inputPassword4" class="form-label-senha">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+        </div>
+        <div>
+            <label for="admin-checkbox">Administrador</label>
+            <input type="checkbox" id="admin-checkbox"><br>
+        </div>
+        <div class="container-button">
+            <button type="button" class="button" id="register-button">Cadastrar</button>
+            <button type="button" class="button" onclick="location.href='/html/producao/telaInicialAdm.html'">Voltar</button>
+        </div>
+    </form>
+
+    <script src="/JAVASCRIPT/validarADM.js"></script>
+</body>
+</html>

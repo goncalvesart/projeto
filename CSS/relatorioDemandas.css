@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.order-card {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px);
+    max-width: 300px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.order-card h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.order-card p {
+    margin: 10px 0;
+}
+
+.order-card .order-card-buttons {
+    display: none;
+    margin-top: 10px;
+}
+
+.order-card.expanded {
+    transform: scale(1.05);
+}
+
+.order-card.expanded .order-card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-card button {
+    padding: 10px;
+    background-color: #201658;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.order-card button.finalizar {
+    background-color: #28a745;
+}
+
+.order-card button.iniciar {
+    background-color: #ffc107;
+}
+
+a button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #201658;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a button:hover {
+    background-color: #0056b3;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #201658;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3652AD;
+}

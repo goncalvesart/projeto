@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/telaCadastrarCliente.css">
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body>
+    <h1>Cadastro de Cliente</h1>
+    <form class="formulario" id="register-form">
+        <div class="container-nome">
+            <label for="inputName" class="form-label-nome">Nome </label>
+            <input type="text" class="form-control" id="inputName" placeholder="NOME">
+        </div>
+        <div class="container-email">
+            <label for="inputEmail4" class="form-label-email">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="container-usuario">
+            <label for="inputUsuario" class="form-label-usuario">Contato</label>
+            <input type="text" class="form-control" id="inputUsuario" placeholder="Usuário" pattern="\d*"
+                title="Apenas números são permitidos">
+        </div>
+
+        <div class="container-button">
+            <button type="button" class="button" id="register-button">Cadastrar</button>
+            <button type="button" class="button" onclick="location.href='/html/producao/listaDeClientes.html'">Lista de
+                Clientes</button>
+            <a href="/HTML/producao/telaDeCadastros.html"><button type="button"
+                    class="btn btn-dark back-button">Voltar</button></a>
+        </div>
+
+    </form>
+    <script src="/JAVASCRIPT/cadastrarClientes.js"></script>
+</body>
+
+</html>

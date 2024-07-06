@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados dos Produtos</title>
+    <link rel="stylesheet" href="/CSS/dados_produto.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dados do Produto</h1>
+        <table id="tabela-produtos" class="tabela-produtos">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tecido</th>
+                    <th>Cor</th>
+                    <th>Tamanho (cm)</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-body">
+                <!-- Linhas da tabela serão inseridas dinamicamente pelo JavaScript -->
+            </tbody>
+        </table>
+        <button id="limpar-dados" class="limpar-dados">Limpar Dados</button>
+        <a href="/HTML/cadastro/cadastrarProduto.html" class="btn">Voltar</a>
+    </div>
+
+    <script src="/JavaScript/script.js"></script>
+    <script>
+        function exibirDadosProduto() {
+            const tabelaBody = document.getElementById('tabela-body');
+            tabelaBody.innerHTML = '';
+
+            const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+
+            produtos.forEach((produto, index) => {
+                const newRow = tabelaBody.insertRow();
+
+                newRow.innerHTML = `
+              <td>${index + 1}</td>
+              <td>${produto.fabric}</td>
+              <td>${produto.color}</td>
+              <td>${produto.size}</td>
+              <td>${produto.description}</td>
+            `;
+            });
+        }
+        
+        const limparDadosButton = document.getElementById('limpar-dados');
+
+        limparDadosButton.addEventListener('click', () => {
+            localStorage.removeItem('produtos');
+            window.location.reload();
+        });
+
+        document.addEventListener('DOMContentLoaded', exibirDadosProduto);
+    </script>
+</body>
+
+</html>

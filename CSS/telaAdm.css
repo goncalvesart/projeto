@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column; /* Mudança para empilhar os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .button-group {
+    display: flex;
+    gap: 1px; /* Espaço entre as duas colunas de botões */
+  }
+  .button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os botões dentro de cada coluna */
+  }
+  .button-column button {
+    width: 700px; /* Largura igual para todos os botões */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .back-button {
+    width: 200px; /* Largura menor para o botão de voltar */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #201658; /* Cor azul */
+    color: white; /* Texto em branco */
+    border: none;
+    margin-top: 10px; /* Espaço acima do botão de voltar */
+    margin-right: 80px;
+  }
+  .back-button:hover{
+    background-color: #3652AD;
+  }

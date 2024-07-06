@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-card {
+    width: 80%;
+    max-width: 400px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px 0;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    margin-bottom: 11px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px); /* Considerando a borda de 1px */
+}
+
+.btn {
+    height: 43px;
+    background-color: #201658;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+    text-decoration: none; /* Adicionando para o link não ter sublinhado */
+    text-align: center; /* Centralizando o texto */
+    display: inline-block; /* Mantendo o elemento como bloco inline */
+    font-size: 18px; /* Tamanho da fonte */
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho do botão */
+}
+
+.btn:hover {
+    background-color: #3652AD;
+}

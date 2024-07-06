@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/cadastroPedidos.css">
+    <title>Cadastro de Pedidos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Pedidos</h1>
+        <form id="orderForm">
+            <input type="text" id="customerName" placeholder="Nome do Cliente" required>
+            <input type="email" id="customerEmail" placeholder="E-mail do Cliente" required>
+            <input type="tel" id="customerPhone" placeholder="Telefone do Cliente" required>
+            <input type="text" id="product" placeholder="Produto" required>
+            <input type="number" id="quantity" placeholder="Quantidade" required>
+            <input type="text" id="color" placeholder="Cor" required>
+            <input type="text" id="fabric" placeholder="Tecido" required>
+            <button type="submit">Adicionar Pedido</button>
+        </form>
+        <a href="/HTML/producao/telaMonitoramentoADM.html"><button>Ver Relatório</button></a>
+        <a href="/HTML/producao/telaDeCadastros.html"><button type="button" class="btn btn-dark back-button">Voltar</button></a>
+    </div>
+    <script src="/JAVASCRIPT/cadastrarPedidos.js"></script>
+</body>
+</html>

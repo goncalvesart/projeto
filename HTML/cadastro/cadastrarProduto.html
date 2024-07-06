@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/cadastroProdutos.css">
+    <title>Cadastro de Produtos</title>
+</head>
+
+<body>
+    <div class="container-card">
+        <h1>Cadastro de Produtos</h1>
+        <form id="product-form" action="/HTML/producao/dados_produto.html" method="GET">
+            <label for="product-fabric">Tecido:</label>
+            <input type="text" id="product-fabric" name="fabric" required>
+            <label for="product-color">Cor:</label>
+            <input type="text" id="product-color" name="color" required>
+            <label for="product-size">Tamanho (cm):</label>
+            <input type="number" id="product-size" name="size" required>
+            <label for="product-description">Descrição:</label>
+            <textarea id="product-description" name="description" rows="4" required></textarea>
+            <input type="submit" value="Salvar" class="btn">
+        </form>
+        <a href="/HTML/producao/telaDeCadastros.html" class="btn">Voltar</a>
+        <a href="/HTML/producao/tabela_produtos.html" class="btn">Ver Produtos</a>
+    </div>
+    <script src="/JAVASCRIPT/script.js"></script>
+    <script>
+        function cadastrarProduto() {
+          const fabric = document.getElementById('product-fabric').value;
+          const color = document.getElementById('product-color').value;
+          const size = document.getElementById('product-size').value;
+          const description = document.getElementById('product-description').value;
+      
+          const produto = {
+            fabric: fabric,
+            color: color,
+            size: size,
+            description: description
+          };
+      
+          const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+      
+          produtos.push(produto);
+      
+          localStorage.setItem('produtos', JSON.stringify(produtos));
+      
+        //   window.location.href = 'dados_produto.html';
+        }
+      </script>
+</body>
+</html>
